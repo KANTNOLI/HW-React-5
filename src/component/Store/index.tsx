@@ -1,11 +1,11 @@
 import style from "./Store.module.css";
 
-import { Game } from "../../App";
+import { GameItf } from "../../App";
 import { useNavigate } from "react-router";
 
 interface props {
-  GamesList: Game[];
-  setGamesList: (value: Game[]) => void;
+  GamesList: GameItf[];
+  setGamesList: (value: GameItf[]) => void;
 }
 
 function rand(min: number, max: number): number {
@@ -31,12 +31,12 @@ function Store({ GamesList, setGamesList }: props) {
         break;
     }
   };
-  const GamesPop = (): Game[] => {
+  const GamesPop = (): GameItf[] => {
     const trash = [...GamesList];
     trash.pop();
     return trash;
   };
-  const GamesPush = (): Game[] => {
+  const GamesPush = (): GameItf[] => {
     const trash = [...GamesList];
     trash.push({
       title: `NEW rand(${rand(1, 9)},${rand(1, 9)},${rand(1, 9)})`,

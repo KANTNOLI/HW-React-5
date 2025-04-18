@@ -10,6 +10,7 @@
 }
 
 .cart {
+  border-radius: 5px;
   margin: 5px;
   width: 150px;
   height: 70px;
