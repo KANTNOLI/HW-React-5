@@ -1,0 +1,29 @@
+.body {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: calc(100% - 40px);
+  height: calc(90vh - 40px);
+
+  background-color: rgb(27, 27, 27);
+}
+
+.cart {
+  margin: 5px;
+  width: 150px;
+  height: 70px;
+  background-color: rgb(46, 46, 46);
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  top: 0;
+  padding: 20px;
+  width: calc(100% - 40px);
+  height: calc(10vh - 40px);
+  background-color: rgb(46, 46, 46);
+}
